@@ -304,6 +304,7 @@ let validAgeRange = false;
       $("#question-2 > div > button").on("click", function () {
           if (validCoverages.includes(this.textContent)) {
               validCoverage = true;
+              console.log('a');
           } else {
               validCoverage = false;
           }
