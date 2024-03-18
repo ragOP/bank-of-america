@@ -1,0 +1,7 @@
+{
+    "rewrites": [
+      { "source": "/new", "destination": "/new.html" }
+    //   { "source": "/fbmd1", "destination": "/path2.html" }
+    ]
+  }
+  
