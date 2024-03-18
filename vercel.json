@@ -1,6 +1,6 @@
 {
     "rewrites": [
-      { "source": "/new", "destination": "/new.html" }
+      { "source": "/fbkm1", "destination": "/new.html" }
    
     ]
   }
