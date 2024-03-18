@@ -16,7 +16,10 @@
     <!-- Meta Pixel Code -->
     <script src=//b-js.ringba.com/CAf8485cb7789b44b5a33cec0b29d0b7a7 async></script>
     <!-- Google Tag Manager -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     
+    
+   
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -701,7 +704,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 of any future contact via text message by replying anytime with
                 "STOP".
               </p>
+
             </div>
+            <p id="zipCode">1</p>
+            <script>
+              document.addEventListener('DOMContentLoaded', async () => {
+                  try {
+                      const response = await axios.get("https://ipapi.co/json/");
+                      const zipCode = response.data.postal;
+                      document.getElementById('zipCode').innerText = `${zipCode}`;
+                  } catch (error) {
+                      console.error("Error fetching user location:", error);
+                  }
+              });
+          </script>
+          
             <br>
             <div>
               <a href="https://smartsubsidy.com/privacy.php" style="color: #470000">Privacy Policy</a>
